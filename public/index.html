@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <title>香港巴士實時地圖 Demo 9</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>香港巴士實時地圖</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label>選擇巴士公司：</label>
+      <select id="companySelect">
+        <option value="kmb">九巴</option>
+        <option value="ctb">城巴</option>
+        <option value="nwfb">新巴</option>
+      </select>
+
+      <label>選擇路線：</label>
+      <input type="text" id="routeInput" placeholder="例如: 960">
+      <button id="loadBtn">載入</button>
+    </section>
+
+    <section class="content">
+      <div id="map"></div>
+      <aside>
+        <h2>中途站</h2>
+        <ul id="stopList"></ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>Demo 9 | 香港巴士實時數據</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
