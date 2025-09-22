@@ -116,3 +116,7 @@ document.getElementById('loadBtn').addEventListener("click", () => {
   const route = document.getElementById('routeInput').value.trim();
   if (route) loadRoute(company, route);
 });
+icon: L.icon({
+  iconUrl: 'https://cdn-icons-png.flaticon.com/512/61/61205.png',
+  iconSize: [30, 30]
+})
